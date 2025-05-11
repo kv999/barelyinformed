@@ -26,7 +26,7 @@ jobs:
       run: pyinstaller --onefile --windowed informed_members.py
 
     - name: Upload EXE as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3.1.3
       with:
         name: informed_members_exe
         path: dist/informed_members.exe
